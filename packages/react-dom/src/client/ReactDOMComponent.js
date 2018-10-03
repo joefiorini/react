@@ -88,6 +88,10 @@ if (__DEV__) {
     // is often used for testing purposes.
     // @see https://electronjs.org/docs/api/webview-tag
     webview: true,
+    // All major browsers support the "main" tag except, technically, IE. The
+    // tag still works and can be styled, although requires styling to make
+    // it a block level element.
+    main: true,
   };
 
   validatePropertiesInDevelopment = function(type, props) {
